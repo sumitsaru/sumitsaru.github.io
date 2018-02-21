@@ -1,7 +1,7 @@
 console.log('welcome');
 
 // By defalut (on page load)
-
+var firstName = document.getElementById('fname')
 // if a 'firstname' cookie is set,
 if (Cookies.get('firstName')) {
   //alert('found a cookie name firstName') also can do it this way
@@ -16,10 +16,6 @@ if (Cookies.get('firstName')) {
   console.log('no cookie was found')
 }
 // update the DOM tp display the value of the firstName cookie
-
-
-
-
 
 // set a cookie with their name in it
 
