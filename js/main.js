@@ -4,11 +4,15 @@ console.log('welcome');
 
 // if a 'firstname' cookie is set,
 if (Cookies.get('firstName')) {
-  //alert//
+  //alert('found a cookie name firstName') also can do it this way
   console.log('found a cookie name firstName')
   /// update the DOM with the value of our firstName cookiesExport
+  document.getElementById('welcome').innertText = 'welcome back' + Cookies.get('firstname')
+  document.getElementById('fname').value = Cookie.get('firstName');
+  // set the placeholder attribute to somethign else
+  // document.getElementById attribute to someting else
 } else {
-  //alert//
+  //alert('no cookie was found') also can do this way to
   console.log('no cookie was found')
 }
 // update the DOM tp display the value of the firstName cookie
